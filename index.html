@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon-192.png" type="image/png" />
+    <meta name="theme-color" content="#2c3e50" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Placar Vôlei</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="score-container">
+    <div class="team-box red">
+      <input class="team-name" id="teamAName" value="Equipe 2" />
+      <div class="score-controls">
+        <button onclick="changeScore('A', -1)">-</button>
+        <span class="score" id="scoreA">0</span>
+        <button onclick="changeScore('A', 1)">+</button>
+      </div>
+    </div>
+
+    <div class="vs">x</div>
+
+    <div class="team-box blue">
+      <input class="team-name" id="teamBName" value="Equipe 1" />
+      <div class="score-controls">
+        <button onclick="changeScore('B', -1)">-</button>
+        <span class="score" id="scoreB">0</span>
+        <button onclick="changeScore('B', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sequence-container" id="sequence">
+    <!-- Blocos de pontos aparecerão aqui -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
